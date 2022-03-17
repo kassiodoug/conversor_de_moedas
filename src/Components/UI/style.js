@@ -24,6 +24,7 @@ export const CardItem = styled.section`
   padding: 1rem;
   box-sizing: border-box;
   font-size: 1rem;
+  flex-basis: 20%;
 `;
 
 export const CardMoedaPrincipal = styled.section`
@@ -44,7 +45,7 @@ export const CardMoedaSec = styled.section`
   /* display: grid;
   grid-template-columns: repeat(4, 1fr); */
   max-width: 90vw;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
 
   box-sizing: content-box;
