@@ -1,23 +1,12 @@
 import styled from 'styled-components'
 
-const breakpoints = {
-  xs: '',
-  sm: '',
-  lg: '',
-  xl: '',
-}
-
 export const Container = styled.section`
   background: blue;
   text-align: center;
-  padding: 2rem;
+  padding: .5rem;
 `;
 
 export const CardItem = styled.section`
-  width: 15vw;
-  height: 15vw;
-  min-width: 200px;
-  min-height: 200px;
   border: 2px solid white;
   border-radius: .5rem;
   margin: .2rem;
@@ -25,6 +14,19 @@ export const CardItem = styled.section`
   box-sizing: border-box;
   font-size: 1rem;
   flex-basis: 20%;
+
+  @media (max-width: 900px){
+    background: yellow;
+  }
+
+  @media (max-width: 600px){
+    flex-basis: 30%;
+    background: green;
+  }
+  
+  @media (max-width: 375px){
+    flex-basis: 100%;
+  }
 `;
 
 export const CardMoedaPrincipal = styled.section`
@@ -44,7 +46,7 @@ export const CardMoedaPrincipal = styled.section`
 export const CardMoedaSec = styled.section`
   /* display: grid;
   grid-template-columns: repeat(4, 1fr); */
-  max-width: 90vw;
+  max-width: 100vw;
   justify-content: center;
   margin: 0 auto;
 

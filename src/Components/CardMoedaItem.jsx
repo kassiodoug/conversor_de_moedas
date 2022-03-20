@@ -1,14 +1,19 @@
 import React from "react";
 import { CardItem } from "./UI/style.js";
 
-const CardMoedaItem = () => {
+const CardMoedaItem = ({ moeda }) => {
+
+  const moedasSimbolo = {
+    "BRL": "R$"
+  }
+
   return(
     <CardItem>
       <figure>
         <img src="" alt="Bandeira do pais" />
-        <h2>Card das Moedas</h2>
+        <h4>{`${moeda.code} -> ${moeda.codein}`}</h4>
+        <p>{`${moedasSimbolo[moeda.codein]} ${moeda.bid}`}</p>
       </figure>
-      <h2>oi</h2>
     </CardItem>
   )
 }
