@@ -5,9 +5,7 @@ export const CurrencySec = styled.section`
   grid-template-columns: repeat(4, 1fr); */
   max-width: 100vw;
   justify-content: center;
-  margin: 0 auto;
-
-  box-sizing: content-box;
+  margin: .5rem auto;
 
   display: flex;
   flex-direction: row;
@@ -25,3 +23,18 @@ export const CurrencySec = styled.section`
     grid-template-columns: 1fr;
   } */
 `;
+
+export const BtnConverter = styled.button`
+  padding: .5rem;
+  background: green;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  
+  :hover {
+    background: green;
+    font-weight: bold;
+    cursor: pointer;
+  }
+`;
+

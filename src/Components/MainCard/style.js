@@ -7,10 +7,10 @@ export const CardMoedaPrincipal = styled.section`
   min-width: 175px;
   max-height: 200px;
   max-width: 200px;
-  border: 2px solid white;
+  border: 2px solid #ccc;
   border-radius: .5rem;
   padding: 1rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
