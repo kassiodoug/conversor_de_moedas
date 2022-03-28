@@ -19,7 +19,7 @@ function App() {
           setSecCurrencyApp={setSecCurrencyApp}
         />
         {
-          (currencyApp.mainCurrency === '') ? <h4>Selecione a moeda principal</h4> :
+          (currencyApp.mainCurrency === '') ? '' :
             <SelectSecondCurrency
               currency={currencyApp.secCurrency}
               setSecCurrencyApp={setSecCurrencyApp}

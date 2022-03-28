@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Button } from './style'; 
 
 function SelectSecondCurrencyItem({ currency, setSecCurrencyApp, secCurrencyApp }) {
@@ -22,9 +22,8 @@ function SelectSecondCurrencyItem({ currency, setSecCurrencyApp, secCurrencyApp 
   return (
     <section>
       <Button
-        onClick={(e) => selectSecCurrency(e)}
+        onClick={selectSecCurrency}
         name={currency}
-        // style={{ background: btnColor }}
         btnColor={btnColor}
         >
           {currency}

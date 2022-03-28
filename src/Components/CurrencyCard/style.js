@@ -30,6 +30,7 @@ export const BtnConverter = styled.button`
   border: none;
   border-radius: 10px;
   color: white;
+  transition: linear;
   
   :hover {
     background: green;
@@ -38,3 +39,7 @@ export const BtnConverter = styled.button`
   }
 `;
 
+export const Symbol = styled.span`
+  font-size: 0.8rem;
+  font-weight: 500;
+`;

@@ -14,6 +14,7 @@ let GlobalStyle = createGlobalStyle`
 export const Table = styled.table`
   width: 100vw;
   border-collapse: collapse;
+  text-align: left;
 `;
 
 export const Tr = styled.tr`
@@ -23,8 +24,7 @@ export const Tr = styled.tr`
 
 export const Td = styled.td`
   :nth-child(1) {
-    text-align: left;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem;
   }
 `;
 

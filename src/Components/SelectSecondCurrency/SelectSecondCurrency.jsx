@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Wrapper } from './style';
 import SelectSecondCurrencyItem from '../SelectSecondCurrencyItem/SelectSecondCurrencyItem'
 
 function SelectSecondCurrency({ currency, setSecCurrencyApp, secCurrencyApp }) {
+
+  useEffect(() => {
+    return () => {
+      console.log(currency)
+    }
+  }, [])
 
   return (
     <section>
