@@ -9,7 +9,7 @@ export const Wrapper =  styled.section`
   border-radius: .5rem;
   gap: .01rem;
   margin: .5rem auto;
-  max-width: 70%;
+  max-width: 80%;
   
   @media (max-width: 800px){
     margin: 1rem auto;

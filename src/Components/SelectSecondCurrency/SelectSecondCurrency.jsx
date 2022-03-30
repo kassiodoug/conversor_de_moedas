@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Wrapper } from './style';
 import SelectSecondCurrencyItem from '../SelectSecondCurrencyItem/SelectSecondCurrencyItem'
 
 function SelectSecondCurrency({ currency, setSecCurrencyApp, secCurrencyApp }) {
-
-  useEffect(() => {
-    return () => {
-      console.log(currency)
-    }
-  }, [])
-
+  
   return (
     <section>
       <h4>Conversões válidas para a moeda selecionada</h4>

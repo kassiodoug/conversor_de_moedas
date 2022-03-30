@@ -7,4 +7,5 @@ export const Button =  styled.button(props => ({
   border: '2px solid white',
   borderRadius: '20px',
   cursor: 'pointer',
+  fontSize: '0.8rem',
 }));

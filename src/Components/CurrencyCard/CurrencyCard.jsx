@@ -203,7 +203,7 @@ const CurrencyCard = ({ mainCurrency, secCurrencys }) => {
                   return (
                     <Tr key={index}>
                       <Td>
-                        <h6>{name.split('/')[0]} ({code})</h6>
+                        <h6>{name.split('/')[0]} ({code}) para:</h6>
                         <h5>{name.split('/')[1]} ({codein})</h5>
                         {/* <p>{code} <span>&#10132;</span> {codein}</p> */}
                       </Td>

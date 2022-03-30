@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from './style'; 
 
 function SelectSecondCurrencyItem({ currency, setSecCurrencyApp, secCurrencyApp }) {
   const btnRed = "#d5150b"
   const btnGreen = "#20c634" 
-  const [btnColor, setBtnColor] = useState(btnRed);
 
   const selectSecCurrency = (e) => {
-    const newCurrency = e.target.name
+    const newCurrency = e.target.value
     let handleArray = Array(...new Set([...secCurrencyApp, newCurrency]))
 
     if (secCurrencyApp.indexOf(newCurrency) === -1) {
       setSecCurrencyApp(handleArray)
-      setBtnColor(btnGreen)
     } else {
       setSecCurrencyApp(secCurrencyApp.filter(item => item !== newCurrency))
-      setBtnColor(btnRed)
     }
   }
 
@@ -23,8 +20,9 @@ function SelectSecondCurrencyItem({ currency, setSecCurrencyApp, secCurrencyApp 
     <section>
       <Button
         onClick={selectSecCurrency}
-        name={currency}
-        btnColor={btnColor}
+        value={currency}
+        selectSecCurrency={selectSecCurrency}
+        btnColor={secCurrencyApp.indexOf(currency) === -1 ? btnRed : btnGreen }
         >
           {currency}
       </Button>
